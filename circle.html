@@ -8,20 +8,17 @@
 <script>
     let Circle = function(radius) {
 
-
         this.r = radius;
 
+        this.getRadius = function() {
+            return this.r;
+        };
+        this.getArea = function() {
+            return Math.PI * this.r * this.r;
+        };
     };
-    // this.getRadius = function() {
-    //     return r;
-    // }
-    // this.getArea = function() {
-    //     return Math.PI * r * r;
-    // }
+
     let circle = new Circle(2);
-    circle.getRadius = function () {
-        return r;
-    };
     let r = circle.getRadius();
 
     circle.getArea = function () {
